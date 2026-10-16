@@ -4,7 +4,7 @@ Play a notification sound when [Claude Code](https://docs.claude.com/en/docs/cla
 
 ## Setup
 
-1. Optional: Drop a sound file into `sounds` folder. If omitted, the default `notification.m4r` sound will be used.
+1. Optional: Drop a sound file into `sounds` folder. If omitted, the default `claude-ember.wav` sound will be used (regenerate it with `python3 scripts/generate_ember.py`).
 2. Run:
 
 ```bash
@@ -22,13 +22,13 @@ Use `--project` to install into `./.claude/settings.json` (this repo only) inste
 
 ## File formats
 
-- **macOS**: any format `afplay` supports, including `.m4r` (default sound file)
+- **macOS**: any format `afplay` supports, including `.wav` (default sound file) and `.m4r`
 - **Linux**: use `.wav` or `.ogg`. `.m4r`/`.m4a` are auto-converted to `.wav` via `ffmpeg` if installed
 - **Windows/WSL**: `.wav`
 
-## Sample sound attribution
+## Default sound
 
-Sample notification sound sourced from [notificationsounds.com](https://notificationsounds.com/notification-sounds), licensed under [CC Attribution](https://notificationsounds.com/terms-of-use#copyright).
+`claude-ember.wav` is synthesized from scratch by `scripts/generate_ember.py`: a soft, low tongue-drum knock that rings out on its own harmonics.
 
 ## Uninstall
 Remove only the hooks this tool added:
